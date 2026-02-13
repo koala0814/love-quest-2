@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>My Love Quest · Valentine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="game-container">
+
+    <!-- INTRO SCREEN -->
+    <section id="intro-screen" class="screen active">
+      <div class="lily-decoration"></div>
+      <h1 class="quest-title">My Love Quest</h1>
+      <button id="start-quest" class="primary-btn">Start Quest</button>
+    </section>
+
+    <!-- LEVEL 1 – REASON I SMILE -->
+    <section id="level1" class="screen">
+      <h2>Level 1: The Reason I Smile</h2>
+      <div class="cards-container">
+        <div class="card" data-message="Because you’re my favorite notification.">✨</div>
+        <div class="card" data-message="Because you’re the best person to argue with.">✨</div>
+        <div class="card" data-message="Because being with you always feels right.">✨</div>
+      </div>
+      <button id="next-level-1" class="next-btn" disabled>Next Level</button>
+    </section>
+
+    <!-- LEVEL 2 – CONSTELLATION GAME -->
+    <section id="level2" class="screen">
+      <h2>Level 2: Light Up the Sky</h2>
+      <div id="constellation-wrapper" class="constellation-grid"></div>
+      <div id="constellation-message" class="level-message"></div>
+      <button id="next-level-2" class="next-btn" disabled>Next Level</button>
+    </section>
+
+    <!-- LEVEL 3 – DEFEAT THE BOSS -->
+    <section id="level3" class="screen">
+      <h2>Defeat the Boss</h2>
+      <div class="boss-area">
+        <img src="assets/boss/boss.png" alt="Valentine boss" id="boss-image" class="boss-img">
+      </div>
+      <div class="hp-bar-container">
+        <div id="hp-bar-fill" class="hp-fill" style="width:100%"></div>
+      </div>
+      <p id="hp-text">❤️ 100 / 100</p>
+      <button id="continue-after-boss" class="next-btn" disabled>Continue</button>
+    </section>
+
+    <!-- FINAL REVEAL -->
+    <section id="final-screen" class="screen">
+      <p class="final-question">There’s only one thing left to do…</p>
+      <button id="valentine-button" class="primary-btn">Will you be my Valentine?</button>
+      <p id="achievement-text" class="achievement hidden">Achievement unlocked: First Valentine with you.</p>
+    </section>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
